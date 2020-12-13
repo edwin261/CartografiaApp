@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cartografia - Barrio Abajo</title>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+	<!-- Css styles -->
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/Font-awesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- Js Scripts -->
+	<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body style="background-color: lightgray">
+	<div class="row">
+		<div class="col-md-9" style="z-index: 100"></div>
+		<div class="col-md-3" id="menuOptions">
+			<div class="nav-side-menu">
+				<!-- Image Title -->
+				<img src="img/Distrito_Cultural.png" id="title_image" class="img-fluid" alt="Distrito cultural image">
+
+				<!-- Image Button options -->
+				<img src="img/buttons/White/INMUEBLE.png" id="img_INMUEBLE" onclick="Click_Image_Button_Option('INMUEBLE')" class="img-fluid buttons_option" alt="Button INMUEBLE image">
+				<img src="img/buttons/White/JUEGOS.png" id="img_JUEGOS" onclick="Click_Image_Button_Option('JUEGOS')" class="img-fluid buttons_option" alt="Button JUEGOS image">
+				<img src="img/buttons/White/COCINA.png" id="img_COCINA" onclick="Click_Image_Button_Option('COCINA')" class="img-fluid buttons_option" alt="Button COCINA image">
+				<img src="img/buttons/White/FIESTA.png" id="img_FIESTA" onclick="Click_Image_Button_Option('FIESTA')" class="img-fluid buttons_option" alt="Button FIESTA image">
+				<img src="img/buttons/White/DANZA.png" id="img_DANZA" onclick="Click_Image_Button_Option('DANZA')" class="img-fluid buttons_option" alt="Button DANZA image">
+				<img src="img/buttons/White/MEMORIA.png" id="img_MEMORIA" onclick="Click_Image_Button_Option('MEMORIA')" class="img-fluid buttons_option" alt="Button MEMORIA image">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div id="MapsContainer">
+				<iframe id="MapsFrame" src="https://www.google.com/maps/d/embed?mid=1fImqq1dtUu7uW8JAJcLZRRwQt5hbME1R"></iframe>
+			</div>
+
+			<div id="ContainerDesctipcion">
+				<span class="boton" onclick="CloseContainerDescripcion()">x</span>
+				
+				<p id="TitleDescripcion" class="h5 ml-5 mt-4"></p>
+
+				<!-- Inmuebles descripcion -->
+				<p class="ml-5" id="InmuebleDescripcion"><small class="SmallDescripcion">En Barrio Abajo las paredes hablan. Cuentan la historia de un barrio que nació frente al río; un barrio de comerciantes, navegantes y empresarios.
+				Uno que tuvo un crecimiento espontaneo y que vivió grandes periodos históricos, inmortalizados en las edificaciones que hoy conforman su paisaje urbano, considerados por la comunidad como joyas de la arquitectura.</small></p>
+
+				<!-- juegos descripcion -->
+				<p class="ml-5" id="JuegosDescripcion"><small class="SmallDescripcion">La sana convivencia se manifiesta en el barrio a partir de un conjunto de prácticas con un fuerte componente lúdico, que les permite los participantes desarrollar un sinnúmero habilidades físicas y cognitivas.
+				Las esquinas, como lugares de encuentro e intercambio, han posibilitado que los juegos se consoliden como prácticas patrimoniales.</small></p>
+
+				<!-- Cocinas descripcion -->
+				<p class="ml-5" id="CocinasDescripcion"><small class="SmallDescripcion">Las manos que atizan los fogones y dan palote a las ollas, son de las mujeres y los hombres que por años han decidido rendir homenaje a su
+				herencia culinaria. Son las vidas de familias que llegaron al barrio y desde entonces no han dejado de transformar los alimentos para cocinar singulares preparaciones, de aromas, colores y sabores que evocan, principalmente, lo afro en Barrio Abajo. </small></p>
+
+				<!-- Fiestas descripcion -->
+				<p class="ml-5" id="FiestasDescripcion"><small class="SmallDescripcion">Los ritos y rituales hacen parte del calendario cultural del bajero. Lo festivo y lo sacro se mezclan para ponerle ritmo a la vida y generar así un escenario propicio que acerca a los feligreses a un encuentro con lo
+				espiritual. Las calles se convierten en las arterias que dan vida a la procesión de santos y vírgenes como expresiones de la cultura popular. </small></p>
+
+				<!-- Danza descripcion -->
+				<p class="ml-5" id="DanzaDescripcion"><small class="SmallDescripcion">Los sonidos del Caribe retumban en los cuerpos de los danzantes y músicos que por años han gozado las carnestolendas. Millo, puya,
+				mapalé, fandango y porro son algunos de los ritmos que nutren el espíritu fiestero de quienes hoy son reconocidos como líderes de la tradición. Gracias a su labor, Barrio Abajo goza de diversas expresiones
+				relacionadas con estas fiestas. </small></p>
+
+				<!-- Memoria descripcion -->
+				<p class="ml-5" id="MemoriaDescripcion"><small class="SmallDescripcion">Con los años, el paisaje y la vida cultural de Barrio Abajo se ha transformado. Sin embargo, aún permanece en la memoria colectiva la
+				nostalgia por algunos sectores que en épocas pasadas gozaron de gran popularidad y aceptación; lugares donde alguna vez se cultivó la historia de una comunidad que nació frente al río. </small></p>
+			</div>
+		</div>
+	</div>
+
+	<img id="selloImage" class="sello_size float-right" alt="Sello Bienes Inmueble">
+
+	<audio id="my_audio" src="audio/audio.mp3" loop="loop" autoplay muted></audio>
+
+
+	<button type="button" class="btn btn-primary btn-circleRigth btn-xl" onclick="showMenu()">
+    	<i class="fa fa-bars" area-hidden="true"></i>
+	</button>
+
+</body>
+</html>
