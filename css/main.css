@@ -89,9 +89,9 @@ body {
 }
 
 #MapsFrame{
-  pointer-events: none;
-	width: 72vh;
-  height: 128vh;
+  width: 72vh;
+  height: 119vh;
+  margin-top: 10vh;
 }
 
 .boton {
@@ -113,17 +113,17 @@ body {
 }
 
 .btn-circleRigth {
-    width: 30px;
-    height: 30px;
-    padding: 6px 0px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.42857;
-    position: fixed;
-    z-index: 100;
-    top: 1%;
-    right: 19vh;
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+  position: fixed;
+  z-index: 100;
+  top: 0.5%;
+  right: 1vh;
 }
 
 #menuOptions{
