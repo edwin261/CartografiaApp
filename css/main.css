@@ -90,7 +90,7 @@ body {
 
 #MapsFrame{
   width: 72vh;
-  height: 119vh;
+  height: 139vh;
   margin-top: 10vh;
 }
 
@@ -109,7 +109,7 @@ body {
     font-size: 24px;
     line-height: 1.33;
     background-color: #0E233D;
-    border-color: #0E233D;
+    border-color: #0776ff;
 }
 
 .btn-circleRigth {
