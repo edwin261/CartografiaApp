@@ -14,7 +14,7 @@
 </head>
 <body style="background-color: lightgray">
 	<div class="row">
-		<div class="col-md-4" style="z-index: 100"></div>
+		<div class="col-md-9" style="z-index: 100"></div>
 		<div class="col-md-3" id="menuOptions">
 			<div class="nav-side-menu">
 				<!-- Image Title -->
@@ -29,6 +29,9 @@
 				<img src="img/buttons/White/MEMORIA.png" id="img_MEMORIA" onclick="Click_Image_Button_Option('MEMORIA')" class="img-fluid buttons_option" alt="Button MEMORIA image">
 			</div>
 		</div>
+		<button type="button" class="btn btn-primary btn-circleRigth btn-xl" onclick="showMenu()">
+    		<i class="fa fa-bars" area-hidden="true"></i>
+		</button>
 		<div class="col-md-12">
 			<div id="MapsContainer">
 				<iframe id="MapsFrame" src="https://www.google.com/maps/d/embed?mid=1fImqq1dtUu7uW8JAJcLZRRwQt5hbME1R"></iframe>
@@ -69,12 +72,7 @@
 
 	<img id="selloImage" class="sello_size float-right" alt="Sello Bienes Inmueble">
 
-	<audio id="my_audio" src="audio/audio.mp3" loop="loop" autoplay muted></audio>
-
-
-	<button type="button" class="btn btn-primary btn-circleRigth btn-xl" onclick="showMenu()">
-    	<i class="fa fa-bars" area-hidden="true"></i>
-	</button>
+	<audio id="my_audio" src="audio/audio.mp3" loop="loop" autoplay muted></audio>	
 
 </body>
 </html>
