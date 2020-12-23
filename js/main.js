@@ -81,7 +81,7 @@ function Click_Image_Button_Option(image_id) {
     $("#img_" + image_id).attr('src', 'img/buttons/Green/' + image_id + '.png');
     $("#selloImage").css("visibility", "visible");
     $("#ContainerDesctipcion").css("visibility", "visible");
-    $("#ContainerDesctipcion").css('height', '36vh');
+    $("#ContainerDesctipcion").css('height', '33%');
 
     switch (image_id) {
         case "INMUEBLE":
@@ -128,6 +128,8 @@ function Click_Image_Button_Option(image_id) {
             $("#MapsFrame").attr("src", "https://www.google.com/maps/d/embed?mid=1_B8XQrLu6dvkjODviHr8tZXB-r44Vp1O");
             break;
     }
+    $("#menuOptions").fadeOut(200);
+    show_menu = true;
 }
 
 function Default_Image_Button_Option() {
