@@ -4,6 +4,9 @@ body {
   overflow: hidden;
 }
 
+.img-fluid {
+  max-width: 77% !important;}
+
 .nav-side-menu {
   overflow: auto;
   font-family: verdana;
@@ -39,7 +42,7 @@ body {
 }
 
 .buttons_option{
-  height: 7.5% !important;
+  height: 5.5% !important;
   margin-bottom: 2%;
   display: block;
   margin-left: auto;
