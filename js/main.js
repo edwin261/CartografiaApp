@@ -81,7 +81,8 @@ function Click_Image_Button_Option(image_id) {
     $("#img_" + image_id).attr('src', 'img/buttons/Green/' + image_id + '.png');
     $("#selloImage").css("visibility", "visible");
     $("#ContainerDesctipcion").css("visibility", "visible");
-    $("#ContainerDesctipcion").css('height', '33%');
+    $("#ContainerDesctipcion").css('height', '79%');
+    $("#ContainerDesctipcion").css('padding-top', '41%');
 
     switch (image_id) {
         case "INMUEBLE":
@@ -124,7 +125,6 @@ function Click_Image_Button_Option(image_id) {
             ChangeSelloImage('SELLO_MEMORIA');
             ChangeDescripcion('ESPACIO DE MEMORIA');
             $("#MemoriaDescripcion").css('display', 'block');
-            $("#ContainerDesctipcion").css('height', '31vh');
             $("#MapsFrame").attr("src", "https://www.google.com/maps/d/embed?mid=1_B8XQrLu6dvkjODviHr8tZXB-r44Vp1O");
             break;
     }
