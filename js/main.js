@@ -169,6 +169,7 @@ function HideTextDescripcion(){
 
 function CloseContainerDescripcion(){
     $("#ContainerDesctipcion").css("visibility", "hidden");
+    $("#selloImage").css("visibility", "hidden");
 }
 
 var show_menu = true;
