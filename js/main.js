@@ -72,6 +72,8 @@ $("document").ready(function() {
             $(this).attr('src', 'img/buttons/White/MEMORIA.png');
         }
     });
+
+    $("#divModal").css("visibility", "visible");
 });
 
 function Click_Image_Button_Option(image_id) {
@@ -181,4 +183,8 @@ function showMenu(){
         $("#menuOptions").fadeOut(200);
         show_menu = true;
     }
+}
+
+function ClosedivModal(){
+    $("#divModal").css("display", "none");
 }

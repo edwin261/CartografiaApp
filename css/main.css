@@ -23,13 +23,22 @@ body {
   right: 0%;
 }
 
-#title_image{
+#title_image, #tituloImg{
   padding-bottom: 4vh;
   margin-top: 8%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 43%;
+}
+
+#tituloImg{
+  width: 65% !important;
+}
+
+#divModal{
+  height: 79% !important;
+  padding-top: 41% !important;
 }
 
 #footer_image{
@@ -64,7 +73,7 @@ body {
   position: sticky;
 }
 
-#ContainerDesctipcion{
+#ContainerDesctipcion, #divModal{
   text-align: justify;
 	visibility: hidden;
 	border-radius: 21px;
