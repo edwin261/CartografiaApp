@@ -146,3 +146,8 @@ body {
   z-index: 100;
   display: none;
 }
+
+#Descripcion{
+  padding-right: 10%;
+  padding-left: 10%;
+}
